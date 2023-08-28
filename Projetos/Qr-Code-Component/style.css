@@ -1,0 +1,53 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Outfit";
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background-color: #d5e1ef;
+  justify-content: center;
+}
+
+.qr-code {
+  width: 30%;
+  min-width: 250px;
+  max-width: 360px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.qr-code img {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.qr-code h2 {
+  font-weight: 900;
+  color: #1b2538;
+}
+
+.qr-code p {
+  color: rgb(95, 95, 95);
+}
