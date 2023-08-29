@@ -1,0 +1,84 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav, .presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    padding-top: 30px;
+    justify-content: space-around;
+}
+.logo {
+    margin-right: 30px;
+}
+nav div {
+    position: relative;
+    gap: 10px;
+    display: flex;
+}
+nav button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.product-list, .company-list, .connect-list {
+    visibility: hidden;
+    opacity: 0;
+    top: 40px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 30px #14141431;
+    min-width: 90px;
+    transition: 0.3s;
+}
+.product-list a, .company-list a, .connect-list a {
+    color: #5f5f5f;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.product-list a:hover, .company-list a:hover .connect-list a:hover {
+    color: #1f1f1f;
+    text-decoration: none;
+}
+.product:hover, .company:hover, .connect:hover {
+    cursor: pointer;
+}
+.product:hover + .product-list ,.company:hover + .company-list,.connect:hover + .connect-list , .product-list:hover, .company-list:hover, .connect-list:hover{
+    visibility: visible;
+    opacity: 1; 
+}
+.presentation {
+    flex-direction: column;
+    color: #fff;
+    padding: 160px 0;
+}
+.arrow {
+    display: block;
+    background-image: url(./images/icon-arrow-light.svg);
+    height: 20px;
+    width: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.container {
+    background-position:left;
+    background-image: url(./images/bg-pattern-intro-desktop.svg), linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    border-bottom-left-radius: 50px;
+}
